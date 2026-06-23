@@ -1,0 +1,16 @@
+Compiled from "StandardWebSocketClient.java"
+public class org.springframework.web.socket.client.standard.StandardWebSocketClient extends org.springframework.web.socket.client.AbstractWebSocketClient {
+  public org.springframework.web.socket.client.standard.StandardWebSocketClient();
+  public org.springframework.web.socket.client.standard.StandardWebSocketClient(jakarta.websocket.WebSocketContainer);
+  public void setUserProperties(java.util.Map<java.lang.String, java.lang.Object>);
+  public java.util.Map<java.lang.String, java.lang.Object> getUserProperties();
+  public void setSslContext(javax.net.ssl.SSLContext);
+  public javax.net.ssl.SSLContext getSslContext();
+  public void setTaskExecutor(org.springframework.core.task.AsyncTaskExecutor);
+  public org.springframework.core.task.AsyncTaskExecutor getTaskExecutor();
+  protected java.util.concurrent.CompletableFuture<org.springframework.web.socket.WebSocketSession> executeInternal(org.springframework.web.socket.WebSocketHandler, org.springframework.http.HttpHeaders, java.net.URI, java.util.List<java.lang.String>, java.util.List<org.springframework.web.socket.WebSocketExtension>, java.util.Map<java.lang.String, java.lang.Object>);
+  static org.apache.commons.logging.Log access$000(org.springframework.web.socket.client.standard.StandardWebSocketClient);
+  static org.apache.commons.logging.Log access$100(org.springframework.web.socket.client.standard.StandardWebSocketClient);
+  static org.apache.commons.logging.Log access$200(org.springframework.web.socket.client.standard.StandardWebSocketClient);
+  static org.apache.commons.logging.Log access$300(org.springframework.web.socket.client.standard.StandardWebSocketClient);
+}

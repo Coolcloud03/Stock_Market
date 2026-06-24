@@ -131,6 +131,14 @@ public class FinnhubPriceStream extends TextWebSocketHandler {
             "recentTradeCount", recentTrades.size()
         );
     }
+
+    public double getLatestPrice(String symbol) {
+        return recentTrades.stream()
+                .filter(trade -> trade.symbol().equalsIgnoreCase(symbol))
+                .findFirst()
+                .map(FinnhubTrade::price)
+                .orElse(0.0);
+    }
 }
 
 @RestController
